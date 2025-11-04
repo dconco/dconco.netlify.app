@@ -1,0 +1,32 @@
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# System files
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Build files (if using build tools in future)
+dist/
+build/
+.cache/
+
+# Package manager files (if using in future)
+node_modules/
+package-lock.json
+yarn.lock
