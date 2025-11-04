@@ -274,6 +274,17 @@ nav .container {
 	animation: float 4s ease-in-out infinite;
 }
 
+.profile-image {
+	width: 280px;
+	height: 280px;
+	border-radius: 50%;
+	object-fit: cover;
+	z-index: 2;
+	position: relative;
+	animation: float 4s ease-in-out infinite;
+	border: 3px solid rgba(124, 58, 237, 0.5);
+}
+
 @keyframes float {
 	0%, 100% {
 		transform: translateY(0);
@@ -650,6 +661,11 @@ footer i {
 
 	.code-symbol {
 		font-size: 4.5em;
+	}
+
+	.profile-image {
+		width: 220px;
+		height: 220px;
 	}
 
 	.cta-buttons {
