@@ -16,6 +16,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	outline: none;
+	tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -113,10 +116,21 @@ nav .container {
 	align-items: center;
 	position: relative;
 	overflow: hidden;
-	background:
-		linear-gradient(135deg, rgba(10, 10, 26, 0.9) 0%, rgba(20, 10, 40, 0.9) 100%),
-		radial-gradient(circle at 20% 50%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
-		radial-gradient(circle at 80% 50%, rgba(167, 139, 250, 0.08) 0%, transparent 50%);
+	background: linear-gradient(
+			135deg,
+			rgba(10, 10, 26, 0.9) 0%,
+			rgba(20, 10, 40, 0.9) 100%
+		),
+		radial-gradient(
+			circle at 20% 50%,
+			rgba(124, 58, 237, 0.1) 0%,
+			transparent 50%
+		),
+		radial-gradient(
+			circle at 80% 50%,
+			rgba(167, 139, 250, 0.08) 0%,
+			transparent 50%
+		);
 	padding-top: 80px;
 }
 
@@ -127,8 +141,10 @@ nav .container {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: 
-		linear-gradient(rgba(124, 58, 237, 0.03) 1px, transparent 1px),
+	background-image: linear-gradient(
+			rgba(124, 58, 237, 0.03) 1px,
+			transparent 1px
+		),
 		linear-gradient(90deg, rgba(124, 58, 237, 0.03) 1px, transparent 1px);
 	background-size: 50px 50px;
 	opacity: 0.4;
@@ -163,8 +179,13 @@ nav .container {
 }
 
 @keyframes gradient-shift {
-	0%, 100% { background-position: 0% 50%; }
-	50% { background-position: 100% 50%; }
+	0%,
+	100% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
 }
 
 .hero-text .subtitle {
@@ -246,14 +267,19 @@ nav .container {
 	width: 280px;
 	height: 280px;
 	border-radius: 50%;
-	background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(167, 139, 250, 0.2));
+	background: linear-gradient(
+		135deg,
+		rgba(124, 58, 237, 0.2),
+		rgba(167, 139, 250, 0.2)
+	);
 	border: 3px solid rgba(124, 58, 237, 0.3);
 	animation: pulse-ring 3s ease-in-out infinite;
 	position: absolute;
 }
 
 @keyframes pulse-ring {
-	0%, 100% {
+	0%,
+	100% {
 		transform: scale(1);
 		opacity: 1;
 	}
@@ -286,7 +312,8 @@ nav .container {
 }
 
 @keyframes float {
-	0%, 100% {
+	0%,
+	100% {
 		transform: translateY(0);
 	}
 	50% {
@@ -297,9 +324,16 @@ nav .container {
 /* About Section */
 .about {
 	padding: 100px 0;
-	background:
-		linear-gradient(180deg, rgba(20, 10, 40, 0.95) 0%, rgba(10, 10, 26, 0.95) 100%),
-		radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.05) 0%, transparent 70%);
+	background: linear-gradient(
+			180deg,
+			rgba(20, 10, 40, 0.95) 0%,
+			rgba(10, 10, 26, 0.95) 100%
+		),
+		radial-gradient(
+			circle at 50% 50%,
+			rgba(124, 58, 237, 0.05) 0%,
+			transparent 70%
+		);
 }
 
 .section-title {
@@ -342,8 +376,11 @@ nav .container {
 /* Skills Section */
 .skills {
 	padding: 100px 0;
-	background:
-		linear-gradient(180deg, rgba(10, 10, 26, 0.95) 0%, rgba(20, 10, 40, 0.95) 100%);
+	background: linear-gradient(
+		180deg,
+		rgba(10, 10, 26, 0.95) 0%,
+		rgba(20, 10, 40, 0.95) 100%
+	);
 }
 
 .skills-grid {
@@ -388,7 +425,11 @@ nav .container {
 .skill-icon {
 	width: 70px;
 	height: 70px;
-	background: linear-gradient(135deg, rgba(167, 139, 250, 0.2), rgba(124, 58, 237, 0.2));
+	background: linear-gradient(
+		135deg,
+		rgba(167, 139, 250, 0.2),
+		rgba(124, 58, 237, 0.2)
+	);
 	border-radius: 14px;
 	display: flex;
 	align-items: center;
@@ -431,8 +472,11 @@ nav .container {
 /* Projects Section */
 .projects {
 	padding: 100px 0;
-	background:
-		linear-gradient(180deg, rgba(20, 10, 40, 0.95) 0%, rgba(10, 10, 26, 0.95) 100%);
+	background: linear-gradient(
+		180deg,
+		rgba(20, 10, 40, 0.95) 0%,
+		rgba(10, 10, 26, 0.95) 100%
+	);
 }
 
 .projects-grid {
@@ -523,8 +567,11 @@ nav .container {
 /* Contact Section */
 .contact {
 	padding: 100px 0;
-	background:
-		linear-gradient(180deg, rgba(10, 10, 26, 0.95) 0%, rgba(20, 10, 40, 0.95) 100%);
+	background: linear-gradient(
+		180deg,
+		rgba(10, 10, 26, 0.95) 0%,
+		rgba(20, 10, 40, 0.95) 100%
+	);
 	text-align: center;
 }
 
@@ -566,7 +613,11 @@ nav .container {
 .contact-icon {
 	width: 70px;
 	height: 70px;
-	background: linear-gradient(135deg, rgba(167, 139, 250, 0.2), rgba(124, 58, 237, 0.2));
+	background: linear-gradient(
+		135deg,
+		rgba(167, 139, 250, 0.2),
+		rgba(124, 58, 237, 0.2)
+	);
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
