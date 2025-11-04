@@ -13,7 +13,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Navigation scroll effect
-let lastScroll = 0;
 window.addEventListener('scroll', () => {
 	const nav = document.querySelector('nav');
 	const currentScroll = window.pageYOffset;
@@ -25,8 +24,6 @@ window.addEventListener('scroll', () => {
 		nav.style.background = 'rgba(10, 10, 26, 0.95)';
 		nav.style.boxShadow = 'none';
 	}
-
-	lastScroll = currentScroll;
 });
 
 // Intersection Observer for scroll animations
@@ -49,11 +46,7 @@ document.querySelectorAll('.skill-card, .project-card, .contact-card').forEach(e
 	observer.observe(el);
 });
 
-// Add loading animation
+// Page ready indicator
 window.addEventListener('load', () => {
-	document.body.style.opacity = '0';
-	setTimeout(() => {
-		document.body.style.transition = 'opacity 0.5s ease';
-		document.body.style.opacity = '1';
-	}, 100);
+	document.body.classList.add('page-loaded');
 });
