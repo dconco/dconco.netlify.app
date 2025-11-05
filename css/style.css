@@ -690,6 +690,7 @@ footer i {
 		grid-template-columns: 1fr;
 		text-align: center;
 		gap: 40px;
+		margin-top: 50px;
 	}
 
 	.hero-text h1 {
